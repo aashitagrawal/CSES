@@ -10,7 +10,7 @@ void dfs(const string& path, bool visited[][N], int x, int y, int steps){
     // 1. Reached early
     if(x==6 && y==0 && steps<48) return;
 
-    // 2. Already visited (bounds already guaranteed by caller)
+    // 2. Already visited (out of bounds is already checked before calling)
     if(visited[x][y]) return;
 
     // 3. Reached somewhere else at step 48
